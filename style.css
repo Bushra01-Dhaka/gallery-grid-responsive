@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* header style */
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    width: 50vh;
+}
+
+.first-part {
+    margin-top: 40px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px gray;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+nav>li {
+    list-style: none;
+}
+
+li {
+    padding: 10px 10px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    width: 100px;
+    color: #4E5150;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 4px 4px 5px gray;
+
+}
+
+li:hover {
+    background-color: #4E5150;
+    color: white;
+}
+
+h3 {
+    color: #4E5150;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+p {
+    margin: 5px 0px 20px;
+}
+
+/* section */
+.row1-img1,
+.row1-img2,
+.row2-img1,
+aside,
+.row3-img1,
+.row3-img2 img {
+    border-radius: 10px;
+}
+
+main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 100px 0;
+    width: 100%;
+}
+
+section img {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.row1-img1 {
+    grid-area: row1-img1;
+}
+
+.row1-img2 {
+    grid-area: row1-img2;
+}
+
+.row2-img1 {
+    grid-area: row2-img1;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.row3-img1 {
+    grid-area: row3-img1;
+}
+
+.row3-img2 {
+    grid-area: row3-img2;
+}
+
+aside img {
+    height: 100%;
+}
+
+.row2-img1 img {
+    width: 100%;
+}
+
+section {
+    display: grid;
+    grid-template-areas:
+        "row1-img1 row1-img2 row1-img2"
+        "row2-img1 row2-img1 aside"
+        "row3-img1 row3-img2 aside"
+    ;
+    gap: 10px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:576px) {
+
+    main {
+        margin: 0 10px;
+    }
+
+    section img {
+        height: 300px;
+        width: 100%;
+    }
+
+    aside img {
+        height: 100%;
+    }
+
+}
